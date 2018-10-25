@@ -3,6 +3,7 @@
     android:id="@+id/rl_root"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:clickable="true"
     android:background="@color/send_dongtai_background_color"
 
     >
@@ -41,32 +42,16 @@
                     android:textColorHint="@color/grey8"
                     android:textSize="14sp" />
             </ScrollView>
-
+            <ImageView
+                android:layout_alignParentBottom="true"
+                android:id="@+id/iv_emogi"
+                android:paddingLeft="19dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/fabu_biaoqing_icon" />
         </LinearLayout>
     </ScrollView>
 
-    <FrameLayout
-        android:id="@+id/fl_emogi"
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:layout_alignParentBottom="true"></FrameLayout>
 
-    <LinearLayout
-        android:id="@+id/ll_emogi"
-        android:layout_width="match_parent"
-        android:layout_height="48dp"
-        android:layout_above="@id/fl_emogi"
-        android:background="@color/send_dongtai_background_color"
-        android:gravity="center_vertical"
-        android:orientation="horizontal"
-        android:visibility="gone"
-        android:clickable="true"
-        android:paddingLeft="19dp">
 
-        <ImageView
-            android:id="@+id/iv_emogi"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/fabu_biaoqing_icon" />
-    </LinearLayout>
 </RelativeLayout>
